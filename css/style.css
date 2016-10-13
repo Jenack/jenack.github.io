@@ -133,9 +133,123 @@
 		margin: 3em 0 4em 0;
 	}
 	
-	p, ul, ol, dl, table
+	/* p, ul, ol, dl, table */
+	p, ol, dl, table
 	{
 		margin-bottom: 2em;
+	}
+
+		/* IT WORKS!!! TODO */
+	ul {
+		list-style: disc;
+		margin: 0 0 1.5em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+		ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.alt li {
+				border-top: solid 1px #c8cccf;
+				padding: 0.5em 0;
+			}
+
+				ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+
+		ul.icons {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+			margin-top: -0.675em;
+		}
+
+			ul.icons li {
+				display: inline-block;
+				padding: 0.675em 0.5em;
+			}
+
+				ul.icons li a {
+					text-decoration: none;
+					position: relative;
+					display: block;
+					width: 3.75em;
+					height: 3.75em;
+					border-radius: 100%;
+					/* border: solid 1px #c8cccf; */
+					line-height: 3.75em;
+					overflow: hidden;
+					text-align: center;
+					text-indent: 3.75em;
+					white-space: nowrap;
+				}
+
+					ul.icons li a:before {
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-font-smoothing: antialiased;
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						text-transform: none !important;
+					}
+
+					ul.icons li a:before {
+						color: #ffffff;
+						text-shadow: 1.25px 0px 0px #000000, -1.25px 0px 0px #000000, 0px 1.25px 0px #000000, 0px -1.25px 0px #000000; /* c8cccf */
+					}
+
+					ul.icons li a:hover:before {
+						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						 /* ff7496 */
+					}
+
+					ul.icons li a:before {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: inherit;
+						height: inherit;
+						font-size: 1.85rem;
+						line-height: inherit;
+						text-align: center;
+						text-indent: 0;
+					}
+
+					ul.icons li a:hover {
+						border-color: #c8cccf; /* ff7496 */
+					}
+
+			@media screen and (max-width: 480px) {
+
+				ul.icons li a:before {
+					font-size: 1.5rem;
+				}
+
+			}
+
+		ul.actions {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.actions li {
+				display: inline-block;
+				padding: 0 0.75em 0 0;
+				vertical-align: middle;
+			}
+
+				ul.actions li:last-child {
+					padding-right: 0;
+				}
 	}
 
 	/* Form */
@@ -380,7 +494,7 @@
 			text-shadow: -1px -1px 0.5px rgba(0,0,0,0.5);
 			overflow: hidden;
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 2px 1px 0px rgba(255,255,255,0.75);
-			background: #43B3E0;
+			background: #43B3E0; /* 2E2E2E */
 			background-image:	url('images/bg.png'),		-moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
 			background-image:	url('images/bg.png'),		-webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
 			background-image:	url('images/bg.png'),		-o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
@@ -398,7 +512,7 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background-color: #43bff0;
+				background-color: #43bff0; /* 2E2E2E */
 				color: #fff !important;
 			}
 			
@@ -407,7 +521,7 @@
 			input[type="reset"]:active,
 			.button:active
 			{
-				background-color: #3BA8D3;
+				background-color: #3BA8D3; /* 2E2E2E */
 				top: 1px;
 			}
 		
