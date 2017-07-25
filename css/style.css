@@ -181,7 +181,7 @@
 					text-decoration: none;
 					position: relative;
 					display: block;
-					width: 3.75em;
+					width: 5.75em;
 					height: 3.75em;
 					border-radius: 100%;
 					/* border: solid 1px #c8cccf; */
@@ -217,7 +217,7 @@
 						left: 0;
 						width: inherit;
 						height: inherit;
-						font-size: 1.85rem;
+						font-size: 3.25rem;
 						line-height: inherit;
 						text-align: center;
 						text-indent: 0;
