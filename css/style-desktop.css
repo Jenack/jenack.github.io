@@ -130,13 +130,13 @@
 
 	.wrapper
 	{
-		padding: 8em 0 8em 0;
+		padding: 2em 0 1em 0;
 		text-align: center;
 	}
 	
 		.wrapper.first
 		{
-			padding-top: 12em;
+			padding-top: 6em;
 		}
 
 /*********************************************************************************/
