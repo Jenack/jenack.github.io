@@ -139,7 +139,6 @@
 		margin-bottom: 2em;
 	}
 
-		/* IT WORKS!!! TODO */
 	ul {
 		list-style: disc;
 		margin: 0 0 1.5em 0;
@@ -169,7 +168,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			margin-top: -2.5em; /*-0.675em;*/
+			margin-top: -4.0em; /*-0.675em;*/
 		}
 
 			ul.icons li {
@@ -201,14 +200,18 @@
 						text-transform: none !important;
 					}
 
+					/* THIS IS WHERE YOU CHANGE ICON COLOR IN THE TOP */
+
 					ul.icons li a:before {
-						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #000000, -1.25px 0px 0px #000000, 0px 1.25px 0px #000000, 0px -1.25px 0px #000000; /* c8cccf */
+						color: #A0A0A0;
+						/* text-shadow: 1.25px 0px 0px #000000, -1.25px 0px 0px #000000, 0px 1.25px 0px #000000, 0px -1.25px 0px #000000;
+						/* c8cccf */
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
-						 /* ff7496 */
+						text-shadow: 1.25px 0px 0px #000000, -1.25px 0px 0px #000000, 0px 1.25px 0px #000000, 0px -1.25px 0px #000000;
+						/* text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						/* ff7496 */
 					}
 
 					ul.icons li a:before {
